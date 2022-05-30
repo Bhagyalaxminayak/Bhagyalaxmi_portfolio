@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(wall.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 34%;
+    text-align: center;
+}
+
+.menu {
+    width: 611px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.menu a {
+    width: 20%;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.menu a:first-child {
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+.button1 {
+    background: pink;
+    color: #000;
+}
+
+.buttton1:hover,
+.button1:active {
+    background: goldenrod;
+    color: white;
+    box-shadow: 0 2rem 2rem 0;
+}
+
+.change_content:after {
+    content: " ";
+    animation: changetext 5s infinite linear;
+    color: rgb(177, 90, 104);
+}
+
+@keyframes changetext {
+    0% {
+        content: "web developer";
+    }
+
+    20% {
+        content: "programmer";
+    }
+
+    40% {
+        content: "influencer";
+    }
+}
+
+/* bio section*/
+
+.bio {
+    background-color: rgb(221, 207, 207);
+}
+
+.secright {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-data {
+    padding: 0px 65px;
+}
+
+.bio-heading {
+    color: red;
+    text-transform: uppercase;
+}
+
+.para {
+    color: #000;
+    text-transform: none;
+    padding: 0px 65px;
+}
+
+.list {
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.image img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 20px;
+}
+
+
+/*skill section*/
+
+
+.skilltitle{
+    text-align: center;
+    text-transform: uppercase;
+    color:whitesmoke;
+    background: #666cb8;
+    font-size: 44px;
+    padding: 22px;
+}
+
+.skillsection{
+    text-align: center;
+    padding: 150px;
+    justify-content: center;
+    background-color:rgb(218, 218, 175);
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.skill {
+    width: 100%;
+    background-color: rgb(131, 206, 131);
+    margin: 35px;
+}
+
+.htmlskilll {
+    width: 80%;
+    background-color: #0d8855;
+}
+
+.cssskill {
+    width: 70%;
+    background-color: #2196f3;
+}
+
+.c-skill {
+    width: 50%;
+    background-color: #f44336;
+}
+
+.pythonskill {
+    width: 50%;
+    background-color:blueviolet;
+}
+
+.javasriptskill {
+    width: 50%;
+    background-color:black;
+}
+
+
+/*project section*/
+
+.project-work{
+    text-transform: uppercase;
+    color:blue;
+    text-align: center;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.card{
+     width: 500px;
+     height: 400px;
+     margin: 10px;
+     border-radius: 20px;
+     background-color:#66cdaa;
+}
+.card-image{
+    background-color: #0d8855;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.project1{
+    background-image: url(work.jpeg);
+}
+.project2{
+    background-image: url(laptop.jpeg);
+}
+.projectheading{
+    justify-content: center;
+    color: #0d8855;
+    font-style: italic;
+}
+.projectpara{
+    color: #000;
+}
+.card:hover{
+     background-color:#ffdab9;
+     color:white;
+     cursor: pointer;
+     transform: scale(1.03);
+}
+
+
+/*footer section*/
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 141px;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    
+}
+.footer h4{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #8dd1ba;
+}
+.footlist{
+    text-decoration: none;
+}
+.foot1{
+    width: 290px;
+    float: left;
+    margin: 1px;
+}
+.foot2{
+    width: 436px;
+}
+.submit-email{
+    width: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #1e9262;
+    border-color: #8dd1ba;
+}
+.submit-button{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 50px;
+    font: 15px;
+    cursor:pointer;
+}
+.submit-button:hover{
+    background-color:blueviolet;
+    color:white;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.socialicons{
+    margin-top: 14px;
+    padding: 2px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/*contact section*/
+
+.contact-sec{
+    width: 50px;
+    padding: 35px 620px;
+    color:rgb(1, 61, 24);
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    background-color: #ececc3;
+}
+
+.contact-heading{
+    text-align: center;
+     font-size: 35px;
+    color: rgb(77, 30, 30);
+}
+.button{
+    width: 55px;
+    background-color: #66cdaa;
+}
+buttton:hover,
+.button:active {
+    background: rgb(207, 174, 90);
+    color: rgb(194, 82, 82);
+    box-shadow: 0 2rem 2rem 0;
+}

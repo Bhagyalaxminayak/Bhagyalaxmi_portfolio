@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio site</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/6a6a35833e.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1 class="animate__animated animate__bounce">bhagyalaxmi</h1>
+      </div>
+      <div class="menu">
+        <a href="#">home</a>
+        <a href="#my_bio">about</a>
+        <a href="my_skill">skills</a>
+        <a href="my_project">project</a>
+        <a href="my_contact">contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <h2><b>welcome to my portfolio</b></h2>
+        <h1>bhagyalaxmi nayak <span class="change_content"></span></h1>
+        <p>web developer</p>
+        <a href="#" class="button1">Get in touch</a>
+      </section>
+    </main>
+  </header>
+
+
+
+  <!-----bio section----->
+
+
+
+  <hr>
+  <section class="bio" id="my_bio">
+    <section class="secright">
+      <div clas="bio-data">
+        <h3 class="bio-heading"><u>about me</u></h3>
+        <p class="para"> Hello there, i am bhagyalaxmi nayak. <br>i am webdeveloper</p>
+
+        <ul class="list">
+          <li>name : bhagyalaxmi nayak</li>
+          <li>address: bhubaneswar,odisha</li>
+          <li>study : pj college of management & technology</li>
+          <li>degree : bachelor's degree in computer appliction</li>
+          <li>mail id: bhagyalaxminayak2017@gmail.com</li>
+        </ul>
+      </div>
+      <div class="image"><img src="gudu1.jpeg" class="imgfluid">
+      </div>
+    </section>
+  </section>
+
+
+
+
+  <!--------skill section------>
+
+
+
+  <hr><div id="my_skill">
+    <h3 class="skilltitle">my skills</h3>
+    <div class="skillsection">
+      <p>html</p>
+      <div class="skill">
+        <div class="htmlskill">80%</div>
+      </div>
+      <p>css</p>
+      <div class="skill">
+        <div class="cssskill">70%</div>
+      </div>
+      <p>c programming</p>
+      <div class="skill">
+        <div class="c-skill">60%</div>
+      </div>
+      <p>python</p>
+      <div class="skill">
+        <div class="pythonskill">50%</div>
+      </div>
+      <p>javascript</p>
+      <div class="skill">
+        <div skill="javascriptskill">50%</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------project section------>
+
+
+  <section class="project" id="my_project">
+    <h3 class="project-work"><u>my projects</u></h3>
+    <div class="card">
+      <div class="card-image project1"></div>
+      <h4 class="projectheading">project 1</h4>
+      <p class="projectpara">Project that connects with the server and sends messages to people who are connected to the
+        same server, developed by using node JS.</p>
+    </div>
+    <div class="card">
+      <div class="card-image project2"></div>
+      <h4 class="projectheading">project 2</h4>
+      <p class="projectpara">implements the functioning of an e-commerce website that performs various functions like
+        sign up, logout,add top cart, billing and much more,developed by using SERVELETS,JDBC,JAVA SQL</p>
+    </div>
+  </section>
+
+
+
+  <!----contact section---->
+
+
+  <hr>
+  <section class="contact-sec" id="my_contact">
+    <div class="contact-me">
+      <div class="contact-heading">
+        <h4>contact me</h4>
+      </div>
+      <div class="contact-form">
+        <form name="form" onsubmit="return validateform()" action="post">
+          <div class="form-1">
+            <label for="name">Name</label>
+          </div>
+          <div><input type="text" id="name" name="name"></div>
+          <div class="form-2">
+            <label for="email">email</label>
+          </div>
+          <div><input type="email" id="name" name="email"></div>
+          <div class="form-3">
+            <label for="phone1">phone</label>
+          </div>
+          <div><input type="tel" id="name" name="phone1"></div>
+          <div class="form-4">
+            <label for="message">subject</label>
+          </div>
+          <div><input type="text" id="name" name="message"></div>
+          <div class="button">
+            <input type="submit" value="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!----footer section-------->
+
+
+  <div class="footer">
+    <div class="foot1">
+      <h4>Details</h4>
+      <ul>
+        <li>about</li>
+        <li>skill</li>
+        <li>project</li>
+        <li>contact</li>
+      </ul>
+    </div>
+    <div class="foot2">
+      <h4>connect</h4>
+      <form class="footform">
+        <input type="email" class="submit-email" placeholder="your email address" required>
+        <br>
+        <button type="submit" class="submit-button">submit</button>
+      </form>
+    </div>
+    <div class="foot3">
+      <h4>contact links</h4>
+      <p>Bhubaneswar,Odisha</p>
+      <div class="socialicons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
